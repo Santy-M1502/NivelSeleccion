@@ -225,12 +225,12 @@ h1{
 }
 
 .event a:hover{
-    animation: brillo .5s linear;
+    animation: iluminacion .5s linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
-@keyframes brillo{
+@keyframes iluminacion{
     from{
         box-shadow: 0px 0px 10px 5px #25f;
     }   

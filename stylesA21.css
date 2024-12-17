@@ -8,10 +8,10 @@ body, div, ul, li, a, h1, h2, h3, h4, p{
 }
 
 body{
-    --bg-color: color-mix(in srgb, #29f 70%, #fff);
+    --bg-color: rgb(15, 69, 94);
     --card-color:#fff;
     --card-bg-color:#fff6;
-    --dark-color: #29f;
+    --dark-color: rgb(119, 182, 236);
     --text-color: #444;
     background-color: var(--bg-color);
     font-family: sans-serif;
