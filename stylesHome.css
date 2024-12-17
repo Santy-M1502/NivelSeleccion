@@ -144,7 +144,7 @@ header{
 /* SECCION 1 */
 
 .section1{
-    background-image: url(bg1.jpg);
+    background-image: url(/HomeImages/bg1.jpg);
     display: flex;
     flex-direction: column;
 }
@@ -162,7 +162,7 @@ h1{
 /* SECCION 2 */
 
 .section2{
-    background-image: url(bg4.png);
+    background-image: url(/HomeImages/bg4.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -201,14 +201,14 @@ h1{
 /* SECCION 3 */
 
 .section3{
-    background-image: url(bg3.jpg);
+    background-image: url(/HomeImages/bg3.jpg);
     background-size: cover;
 }
 
 /* SECCION 4 */
 
 .section4{
-    background-image: url(bg2.jpg);
+    background-image: url(/HomeImages/bg2.jpg);
     background-size: cover;
 }
 
