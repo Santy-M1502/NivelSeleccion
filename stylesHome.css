@@ -124,6 +124,7 @@ header{
 
 .section1{
     background-image: url(/HomeImages/bg1.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -161,16 +162,28 @@ h1{
     user-select: none;
 }
 
-.section2 p{
+.section2 li{
     margin: 10px 0;
+    list-style-type: none;
 }
 
-.section2 p a{
+.section2 h2{
+    color: #4cf;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.section2 d{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.section2 li a{
     text-decoration: none;
     color: var(--card-color);
 }
 
-.section2 p a:hover{
+.section2 li a:hover{
     animation: torneos-color .5s both;
 }
 
@@ -183,7 +196,7 @@ h1{
     }
 }
 
-.section2 p a:hover{
+.section2 li a:hover{
     border-radius: 10px;
     background-color: var(--card-color);
     color: var(--bg-color);
@@ -194,6 +207,15 @@ h1{
 .section3{
     background-image: url(/HomeImages/bg3.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 h2{
+    margin-bottom: 20px;
+    text-decoration:underline;
+    animation: brillo 1s infinite;
+    animation-direction: alternate;
 }
 
 .events-container{
@@ -271,6 +293,18 @@ h1{
     .section1, .section2, .section3, .section4{
         background-position: center;
         background-position: 25%;
+    }
+
+    body, li, h2, h3, h4, h5, h6, p{
+        font-size: 1.4rem;
+    }
+
+    header a{
+        font-size: .5rem;
+    }
+
+    .event a{
+        padding: 10px 10px;
     }
 
 }
