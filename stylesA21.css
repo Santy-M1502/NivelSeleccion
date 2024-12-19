@@ -40,7 +40,7 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    background-color: var(--dark-color);
+    background: linear-gradient(#ddf , #29f);
 }
 
 .item{
