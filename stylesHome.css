@@ -189,11 +189,8 @@ h1{
     color: #4cf;
     margin-bottom: 20px;
     text-decoration: underline;
-}
-
-.section2 d{
-    color: #fff;
-    text-decoration: underline;
+    animation: brillo 1s infinite;
+    animation-direction: alternate;
 }
 
 .section2 li a{
@@ -321,6 +318,51 @@ h1{
     }
 }
 
+/* SECCION 4 */
+
+.section4{
+    background-image: url(/HomeImages/bg2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container{
+    text-align: center;
+    width: clamp(100px, 70%, 1200px);
+}
+
+.text-container h2{
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    animation: brillo .7s infinite;
+    animation-direction: alternate;
+}
+
+.text-container p{
+    font-size: 2.3rem;
+    margin-top: 2rem;
+}
+
+.text-container p:last-child{
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 4rem;
+    animation: brillo .5s infinite;
+    animation-direction: alternate;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    display: flex;
+    background-color: var(--text-color);
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
 @media screen and (max-width: 850px) {
 
     .event{
@@ -367,49 +409,20 @@ h1{
         padding: 10px 10px;
     }
 
+    .text-container h2{
+        font-size: 2.2rem;
+    }
+
+    .text-container p{
+        font-size: 1.3rem;
+    }
+
+    .text-container p:last-child{
+        font-size: 2rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
 }
-
-/* SECCION 4 */
-
-.section4{
-    background-image: url(/HomeImages/bg2.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.text-container{
-    text-align: center;
-    width: clamp(100px, 70%, 1200px);
-}
-
-.text-container h2{
-    font-size: 5rem;
-    margin-bottom: 4rem;
-    animation: brillo .7s infinite;
-    animation-direction: alternate;
-}
-
-.text-container p{
-    font-size: 2.3rem;
-    margin-top: 8rem;
-}
-
-.text-container p:last-child{
-    font-weight: bold;
-    margin-top: 8rem;
-    font-size: 4rem;
-    animation: brillo .5s infinite;
-    animation-direction: alternate;
-}
-
-/* FOOTER SECTION */
-
-footer{
-    display: flex;
-    background-color: var(--text-color);
-    color: #fff;
-    justify-content: space-between;
-    padding: 40px 30px;
-}
-
