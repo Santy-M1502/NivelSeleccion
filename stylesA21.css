@@ -259,7 +259,7 @@ header{
 }
 
 .skill-bar4:nth-child(4) div {
-    width: 50%;
+    width: 60%;
 }
 
 .skill-bar4:nth-child(5) div {
@@ -325,7 +325,7 @@ header{
 }
 
 .skill-bar7:nth-child(4) div {
-    width: 50%;
+    width: 60%;
 }
 
 .skill-bar7:nth-child(5) div {
@@ -369,7 +369,7 @@ header{
 }
 
 .skill-bar9:nth-child(4) div {
-    width: 50%;
+    width: 60%;
 }
 
 .skill-bar9:nth-child(5) div {
@@ -391,7 +391,7 @@ header{
 }
 
 .skill-bar10:nth-child(4) div {
-    width: 50%;
+    width: 90%;
 }
 
 .skill-bar10:nth-child(5) div {
@@ -413,7 +413,7 @@ header{
 }
 
 .skill-bar11:nth-child(4) div {
-    width: 50%;
+    width: 60%;
 }
 
 .skill-bar11:nth-child(5) div {
@@ -821,13 +821,18 @@ header{
 }
 
 @media screen and (max-width: 850px) {
+
+    .card{
+    min-width: clamp(160px, 100%, 320px);
+    }
+
     .item-list{
         flex-direction: row;
         padding-bottom: 15px;
     }
 
     .skill-bar div{
-        color: var(--text-color);
+        color: black;
     }
 
     .item{
