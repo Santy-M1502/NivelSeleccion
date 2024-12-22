@@ -107,6 +107,70 @@ header{
 
 /* Main Section */
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--bg-color);
+    background-color: var(--dark-color);
+    margin: 40px 0px;
+}
+
+h2{
+    color: var(--card-color);
+    font-size: 2.5rem;
+    text-decoration:underline;
+    padding: 20px 0;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.player-container img{
+    max-width: 60dvw;
+}
+
+.titles-container{
+    background-color: var(--card-color);
+    max-width: 60dvw;
+}
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title{
+    background-color: #ccc;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border-top: 2px solid #29f;
+    text-align: center;
+}
+
+.title:hover{
+    padding: 5px;
+    margin: 0;
+    background-color: #ddd;
+    box-shadow: 0px 0px 10px #29f;
+}
+
+.separator{
+    background: linear-gradient(var(--bg-color), var(--dark-color),var(--bg-color));
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
 
 /* Footer Section */
 footer{
@@ -120,6 +184,18 @@ footer{
 }
 
 @media screen and (max-width: 850px) {
+
+    .title{
+        font-size: 1rem;
+    }
+    
+    .player-container img{
+        max-width: 90dvw;
+    }
+
+    .titles-container{
+        max-width: 90dvw;
+    }
 
     .event{
         font-size: 1.3rem;
