@@ -108,76 +108,73 @@ header{
     display: flex;
 }
 
-/* Main Section */
+/* MAIN SECTION */
 
-main{
+.contact{
+    background-color: #333;
+    width: 50dvw;
+    height: auto;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-h1{
-    width: 100%;
-    font-size: 3rem;
-    text-align: center;
-    color: var(--bg-color);
-    background-color: var(--dark-color);
-    margin: 40px 0px;
+    border: 4px solid var(--bg-color);
 }
 
 h2{
-    color: var(--card-color);
-    font-size: 2.5rem;
-    text-decoration:underline;
-    padding: 20px 0;
-}
-
-h3{
     font-size: 2rem;
-}
-
-.player-container img{
-    max-width: 60dvw;
-}
-
-.titles-container{
-    background-color: var(--card-color);
-    max-width: 60dvw;
-}
-
-.titles{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.title{
-    background-color: #ccc;
-    list-style: none;
-    padding: 10px;
-    margin: 5px;
-    border-top: 2px solid #29f;
+    margin-top: 1.5rem;
     text-align: center;
+    background-color: var(--dark-color);
+    color: var(--bg-color);
 }
 
-.title:hover{
-    padding: 5px;
-    margin: 0;
-    background-color: #ddd;
-    box-shadow: 0px 0px 10px #29f;
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 10px;
 }
 
-.separator{
-    background: linear-gradient(var(--bg-color), var(--dark-color),var(--bg-color));
-    height: 50px;
-    width: 100%;
-    margin-top: 30px;
+.form-container label{
+    font-size: 1.2rem;
+    color: #fff;
 }
 
-/* Footer Section */
+.form-container input, textarea{
+    background-color: #333;
+    color: var(--card-color);
+    padding: 10px 0;
+    border: none;
+    border-bottom: 3px solid #111;
+    border-left: 3px solid #111;
+}
+
+.form-container input:focus, textarea:focus{
+    border: 3px solid #111;
+    background-color: #444;
+}
+
+textarea{
+    min-width: 200px;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.form{
+    height: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea{
+    padding-bottom: 0px;
+}
+
+/* FOOTER SECTION */
+
 footer{
-    margin-top: 20px;
     display: flex;
     background-color: var(--text-color);
     color: #fff;
@@ -188,16 +185,9 @@ footer{
 
 @media screen and (max-width: 850px) {
 
-    .title{
-        font-size: 1rem;
-    }
-    
-    .player-container img{
-        max-width: 90dvw;
-    }
-
-    .titles-container{
-        max-width: 90dvw;
+    .contact{
+        width: 90%;
+        justify-content: center;
     }
 
     .event{
@@ -257,8 +247,6 @@ footer{
     .text-container p:last-child{
         font-size: 2rem;
     }
-
-
 
     footer{
         font-size: 1rem;

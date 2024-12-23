@@ -15,6 +15,9 @@ body{
     --text-color: #444;
     background-color: var(--bg-color);
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main{
