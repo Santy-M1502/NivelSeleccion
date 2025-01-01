@@ -1,0 +1,863 @@
+*{
+    box-sizing: border-box;
+}
+
+body, div, ul, li, a, h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    --bg-color: rgb(15, 69, 94);
+    --card-color:#fff;
+    --card-bg-color:#fff6;
+    --dark-color: rgb(119, 182, 236);
+    --text-color: #444;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* HEADER SECTION */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: linear-gradient(#ddf , #29f);
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 20px;
+    background-color: var(--bg-color);
+    list-style: none;
+    border-radius: 6px;
+}
+
+.item-list {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list .logo-image{
+    display: flex;
+    align-items: start;
+}
+
+.item a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 15px 25px;
+    color: var(--card-color);
+    border-radius: 5px;
+}
+
+.item a:hover{
+    animation: header-button 1s;
+}
+
+.item a:hover{
+    color: var(--bg-color);
+    background-color: var(--card-color);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.logo-image{
+    width: 110px;
+    padding: 10px;
+}
+
+.item-container {
+    display: flex;
+}
+
+.logo-image{
+    width: 110px;
+    padding: 10px;
+}
+
+/* CARDS SECTION*/
+
+.card{
+    max-width: clamp(160px, 50%, 320px);
+    background-color: var(--card-bg-color);
+    margin: 50px auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.card__back, .card__front{
+    backface-visibility: hidden;
+    transition: transform 1s;
+    background-color: var(--card-color);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+
+.card:hover .card__front{
+    transform: perspective(1100px) rotateY(180deg);
+}
+
+.card:hover .card__back{
+    transform: perspective(1100px) rotateY(360deg);
+}
+
+.card__front{
+    transform: perspective(1100px) rotateY(0deg);
+}
+
+.card__back{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    transform: perspective(900px) rotateY(180deg);
+}
+
+.card__back span{
+    font-size: 1.5rem;
+    margin: 6px 0;
+}
+
+.card__worker{
+    max-height: 150px;
+    overflow: hidden;
+    display: block;
+}
+
+.card__worker img{
+    max-width: 100%;
+}
+
+.card__data{
+    padding: 12px;
+}
+
+.card__data span{
+    font-size: 1.4rem;
+    margin: 12px 0;
+    display: block;
+}
+
+.skill-bar{
+    border: 3px solid var(--bg-color);
+    margin: 8px;
+    padding: 3px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-bar div{
+    background-color: var(--bg-color);
+    padding: 5px;
+    color: var(--card-color);
+}
+
+/* jugador 1 */
+
+.skill-bar:nth-child(2) div {
+    width: 50%;
+}
+
+.skill-bar:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar:last-child div {
+    width: 50%;
+}
+
+/* jugador 2 */
+
+.skill-bar2:nth-child(2) div {
+    width: 60%;
+}
+
+.skill-bar2:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar2:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar2:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar2:last-child div {
+    width: 50%;
+}
+
+/* jugador 3 */
+
+.skill-bar3:nth-child(2) div {
+    width: 80%;
+}
+
+.skill-bar3:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar3:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar3:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar3:last-child div {
+    width: 50%;
+}
+
+/* jugador 4 */
+
+.skill-bar4:nth-child(2) div {
+    width: 65%;
+}
+
+.skill-bar4:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar4:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar4:nth-child(5) div {
+    width: 80%;
+}
+
+.skill-bar4:last-child div {
+    width: 50%;
+}
+
+/* jugador 5 */
+
+.skill-bar5:nth-child(2) div {
+    width: 75%;
+}
+
+.skill-bar5:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar5:nth-child(4) div {
+    width: 70%;
+}
+
+.skill-bar5:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar5:last-child div {
+    width: 50%;
+}
+
+/* jugador 6 */
+
+.skill-bar6:nth-child(2) div {
+    width: 65%;
+}
+
+.skill-bar6:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar6:nth-child(4) div {
+    width: 60%;
+}
+
+.skill-bar6:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar6:last-child div {
+    width: 50%;
+}
+
+/* jugador 7 */
+
+.skill-bar7:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar7:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar7:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar7:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar7:last-child div {
+    width: 50%;
+}
+
+/* jugador 8 */
+
+.skill-bar8:nth-child(2) div {
+    width: 80%;
+}
+
+.skill-bar8:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar8:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar8:nth-child(5) div {
+    width: 80%;
+}
+
+.skill-bar8:last-child div {
+    width: 50%;
+}
+
+/* jugador 9 */
+
+.skill-bar9:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar9:nth-child(3) div {
+    width: 70%;
+}
+
+.skill-bar9:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar9:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar9:last-child div {
+    width: 50%;
+}
+
+/* jugador 10 */
+
+.skill-bar10:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar10:nth-child(3) div {
+    width: 90%;
+}
+
+.skill-bar10:nth-child(4) div {
+    width: 90%;
+}
+
+.skill-bar10:nth-child(5) div {
+    width: 65%;
+}
+
+.skill-bar10:last-child div {
+    width: 50%;
+}
+
+/* jugador 11 */
+
+.skill-bar11:nth-child(2) div {
+    width: 80%;
+}
+
+.skill-bar11:nth-child(3) div {
+    width: 65%;
+}
+
+.skill-bar11:nth-child(4) div {
+    width: 65%;
+}
+
+.skill-bar11:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar11:last-child div {
+    width: 50%;
+}
+
+/* jugador 12 */
+
+.skill-bar12:nth-child(2) div {
+    width: 50%;
+}
+
+.skill-bar12:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar12:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar12:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar12:last-child div {
+    width: 50%;
+}
+
+/* jugador 13 */
+
+.skill-bar13:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar13:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar13:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar13:nth-child(5) div {
+    width: 70%;
+}
+
+.skill-bar13:last-child div {
+    width: 50%;
+}
+
+/* jugador 14 */
+
+.skill-bar14:nth-child(2) div {
+    width: 70%;
+}
+
+.skill-bar14:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar14:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar14:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar14:last-child div {
+    width: 50%;
+}
+
+/* jugador 15 */
+
+.skill-bar15:nth-child(2) div {
+    width: 60%;
+}
+
+.skill-bar15:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar15:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar15:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar15:last-child div {
+    width: 50%;
+}
+
+/* jugador 16 */
+
+.skill-bar16:nth-child(2) div {
+    width: 60%;
+}
+
+.skill-bar16:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar16:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar16:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar16:last-child div {
+    width: 50%;
+}
+
+/* jugador 17 */
+
+.skill-bar17:nth-child(2) div {
+    width: 65%;
+}
+
+.skill-bar17:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar17:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar17:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar17:last-child div {
+    width: 50%;
+}
+
+/* jugador 18 */
+
+.skill-bar18:nth-child(2) div {
+    width: 60%;
+}
+
+.skill-bar18:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar18:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar18:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar18:last-child div {
+    width: 50%;
+}
+
+/* jugador 19 */
+
+.skill-bar19:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar19:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar19:nth-child(4) div {
+    width: 60%;
+}
+
+.skill-bar19:nth-child(5) div {
+    width: 70%;
+}
+
+.skill-bar19:last-child div {
+    width: 50%;
+}
+
+/* jugador 20 */
+
+.skill-bar20:nth-child(2) div {
+    width: 80%;
+}
+
+.skill-bar20:nth-child(3) div {
+    width: 65%;
+}
+
+.skill-bar20:nth-child(4) div {
+    width: 65%;
+}
+
+.skill-bar20:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar20:last-child div {
+    width: 50%;
+}
+
+/* jugador 21 */
+
+.skill-bar21:nth-child(2) div {
+    width: 65%;
+}
+
+.skill-bar21:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar21:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar21:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar21:last-child div {
+    width: 50%;
+}
+
+/* jugador 22 */
+
+.skill-bar22:nth-child(2) div {
+    width: 80%;
+}
+
+.skill-bar22:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar22:nth-child(4) div {
+    width: 65%;
+}
+
+.skill-bar22:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar22:last-child div {
+    width: 50%;
+}
+
+/* jugador 23 */
+
+.skill-bar23:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar23:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar23:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar23:nth-child(5) div {
+    width: 65%;
+}
+
+.skill-bar23:last-child div {
+    width: 50%;
+}
+
+/* jugador 24 */
+
+.skill-bar24:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar24:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar24:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar24:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar24:last-child div {
+    width: 50%;
+}
+
+/* jugador 25 */
+
+.skill-bar25:nth-child(2) div {
+    width: 75%;
+}
+
+.skill-bar25:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar25:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar25:nth-child(5) div {
+    width: 65%;
+}
+
+.skill-bar25:last-child div {
+    width: 50%;
+}
+
+/* jugador 26 */
+
+.skill-bar26:nth-child(2) div {
+    width: 90%;
+}
+
+.skill-bar26:nth-child(3) div {
+    width: 65%;
+}
+
+.skill-bar26:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar26:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar26:last-child div {
+    width: 50%;
+}
+
+/* jugador 27 */
+
+.skill-bar27:nth-child(2) div {
+    width: 50%;
+}
+
+.skill-bar27:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar27:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar27:nth-child(5) div {
+    width: 60%;
+}
+
+.skill-bar27:last-child div {
+    width: 50%;
+}
+
+/* jugador 28 */
+
+.skill-bar28:nth-child(2) div {
+    width: 51%;
+}
+
+.skill-bar28:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar28:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar28:nth-child(5) div {
+    width: 50%;
+}
+
+.skill-bar28:last-child div {
+    width: 50%;
+}
+
+/* dt */
+
+.skill-bar29:nth-child(2) div {
+    width: 51%;
+}
+
+.skill-bar29:nth-child(3) div {
+    width: 50%;
+}
+
+.skill-bar29:nth-child(4) div {
+    width: 50%;
+}
+
+.skill-bar29:nth-child(5) div {
+    width: 60%;
+}
+
+.skill-bar29:last-child div {
+    width: 50%;
+}
+
+@media screen and (max-width: 850px) {
+
+    .card{
+    min-width: clamp(160px, 100%, 320px);
+    }
+
+    .item-list{
+        flex-direction: row;
+        padding-bottom: 15px;
+    }
+
+    .skill-bar div{
+        color: black;
+    }
+
+    .item{
+        font-size: 10px;
+        margin: 2px;
+        padding: 0 ;
+    }
+
+    .item a{
+        padding: 15px 10px;
+    }
+
+    .logo-image{
+        width: 5rem;
+    }
+
+}
+
+/* FOOTER SECTION */
+
+footer{
+    display: flex;
+    background-color: var(--text-color);
+    color: #fff;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
