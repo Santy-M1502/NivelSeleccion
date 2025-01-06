@@ -87,7 +87,7 @@ header{
         background-color: var(--bg-color);
     }
     to{
-        padding: 15px 25px;
+        padding: 15;
         background-color: #fff;
     }
 }

@@ -50,6 +50,21 @@ header{
     border-radius: 6px;
 }
 
+.item a:hover{
+    animation: header-button 1s;
+}
+
+@keyframes header-button{
+    from{
+        padding: 30px 40px;
+        background-color: var(--bg-color);
+    }
+    to{
+        padding: 15;
+        background-color: #fff;
+    }
+}
+
 .item-list {
     display: flex;
     align-items: center; 
