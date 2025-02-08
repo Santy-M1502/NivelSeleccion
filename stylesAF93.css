@@ -200,7 +200,7 @@ header{
 /* jugador 1 */
 
 .skill-bar:nth-child(2) div {
-    width: 50%;
+    width: 90%;
 }
 
 .skill-bar:nth-child(3) div {
@@ -222,7 +222,7 @@ header{
 /* jugador 2 */
 
 .skill-bar2:nth-child(2) div {
-    width: 50%;
+    width: 90%;
 }
 
 .skill-bar2:nth-child(3) div {
@@ -278,7 +278,7 @@ header{
 }
 
 .skill-bar4:nth-child(5) div {
-    width: 50%;
+    width: 70%;
 }
 
 .skill-bar4:last-child div {
@@ -288,7 +288,7 @@ header{
 /* jugador 5 */
 
 .skill-bar5:nth-child(2) div {
-    width: 50%;
+    width: 90%;
 }
 
 .skill-bar5:nth-child(3) div {
@@ -310,7 +310,7 @@ header{
 /* jugador 6 */
 
 .skill-bar6:nth-child(2) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar6:nth-child(3) div {
@@ -336,7 +336,7 @@ header{
 }
 
 .skill-bar7:nth-child(3) div {
-    width: 50%;
+    width: 80%;
 }
 
 .skill-bar7:nth-child(4) div {
@@ -384,7 +384,7 @@ header{
 }
 
 .skill-bar9:nth-child(4) div {
-    width: 50%;
+    width: 80%;
 }
 
 .skill-bar9:nth-child(5) div {
@@ -406,7 +406,7 @@ header{
 }
 
 .skill-bar10:nth-child(4) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar10:nth-child(5) div {
@@ -420,11 +420,11 @@ header{
 /* jugador 11 */
 
 .skill-bar11:nth-child(2) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar11:nth-child(3) div {
-    width: 77%;
+    width: 50%;
 }
 
 .skill-bar11:nth-child(4) div {
@@ -498,7 +498,7 @@ header{
 }
 
 .skill-bar14:nth-child(5) div {
-    width: 50%;
+    width: 70%;
 }
 
 .skill-bar14:last-child div {
@@ -530,7 +530,7 @@ header{
 /* jugador 16 */
 
 .skill-bar16:nth-child(2) div {
-    width: 50%;
+    width: 90%;
 }
 
 .skill-bar16:nth-child(3) div {
@@ -574,7 +574,7 @@ header{
 /* jugador 18 */
 
 .skill-bar18:nth-child(2) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar18:nth-child(3) div {
@@ -596,7 +596,7 @@ header{
 /* jugador 19 */
 
 .skill-bar19:nth-child(2) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar19:nth-child(3) div {
@@ -608,7 +608,7 @@ header{
 }
 
 .skill-bar19:nth-child(5) div {
-    width: 80%;
+    width: 50%;
 }
 
 .skill-bar19:last-child div {
@@ -640,11 +640,11 @@ header{
 /* jugador 21 */
 
 .skill-bar21:nth-child(2) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar21:nth-child(3) div {
-    width: 77%;
+    width: 50%;
 }
 
 .skill-bar21:nth-child(4) div {
@@ -662,15 +662,15 @@ header{
 /* jugador 22 */
 
 .skill-bar22:nth-child(2) div {
-    width: 90%;
+    width: 50%;
 }
 
 .skill-bar22:nth-child(3) div {
-    width: 77%;
+    width: 50%;
 }
 
 .skill-bar22:nth-child(4) div {
-    width: 77%;
+    width: 50%;
 }
 
 .skill-bar22:nth-child(5) div {

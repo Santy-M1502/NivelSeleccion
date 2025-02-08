@@ -37,7 +37,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background: linear-gradient(#ddf , #29f);
+    background: linear-gradient(#ddf, #29f);
 }
 
 .item{
